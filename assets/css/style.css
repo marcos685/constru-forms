@@ -84,6 +84,7 @@ h3 {
   font-weight: 300 !important;
   margin-top: 20px;
   float: right;
+  cursor: pointer;
 }
 
 aside {
