@@ -126,3 +126,16 @@ main {
   flex: 1;
   background: #f7f7f7;
 }
+
+.result {
+  display: flex;
+  justify-content: center;
+  background: #a6f2a9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+}
