@@ -212,3 +212,8 @@ h2 {
   font-family: var(--mont) !important;
   color: #fff !important;
 }
+
+.chasitorInputWrapper.dynamicResizeTextOneRow.text.embeddedServiceLiveAgentStateChatInputFooter,
+.rich-menu-item.embeddedServiceLiveAgentStateChatRichItem {
+  font-family: var(--mont) !important;
+}
