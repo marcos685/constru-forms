@@ -179,6 +179,10 @@ h2 {
 .formContent.embeddedServiceSidebarForm {
   font-family: var(--mont) !important;
 }
+
+.formContent.embeddedServiceSidebarForm * {
+  font-family: var(--mont) !important;
+}
 .sidebarHeader h2 {
   font-family: var(--mont) !important;
   color: #fff !important;
