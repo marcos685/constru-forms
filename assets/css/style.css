@@ -210,6 +210,7 @@ h2 {
 .waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
   background: var(--primary) !important;
   font-family: var(--mont) !important;
+  padding: 0 10px !important;
   color: #fff !important;
 }
 
