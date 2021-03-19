@@ -197,3 +197,18 @@ h2 {
   font-family: var(--mont) !important;
   color: #fff !important;
 }
+
+.messageArea.smoothScroll {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton {
+  padding: 0 10px !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+  background: var(--primary) !important;
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
