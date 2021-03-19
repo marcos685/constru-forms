@@ -214,6 +214,7 @@ h2 {
 }
 
 .chasitorInputWrapper.dynamicResizeTextOneRow.text.embeddedServiceLiveAgentStateChatInputFooter,
-.rich-menu-item.embeddedServiceLiveAgentStateChatRichItem {
+.rich-menu-item.embeddedServiceLiveAgentStateChatRichItem,
+.chasitorText.textarea.uiInput.uiInputTextArea.uiInput--default.uiInput--textarea {
   font-family: var(--mont) !important;
 }
