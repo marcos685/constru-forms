@@ -29,10 +29,34 @@
 
           <div class="main">
             <div class="options">
-              <div class="option selected">
+              <div
+                id="individual-plan"
+                class="option selected"
+                onclick="setView('individual','individual-plan')"
+              >
                 <div class="circle"></div>
                 <div class="content">
-                  <h3>Informações de Contato</h3>
+                  <h3>Plano Individual</h3>
+                </div>
+              </div>
+              <div
+                id="family-plan"
+                class="option"
+                onclick="setView('family','family-plan')"
+              >
+                <div class="circle"></div>
+                <div class="content">
+                  <h3>Plano Familiar</h3>
+                </div>
+              </div>
+              <div
+                id="business-plan"
+                class="option"
+                onclick="setView('business','business-plan')"
+              >
+                <div class="circle"></div>
+                <div class="content">
+                  <h3>Plano Empresarial</h3>
                 </div>
               </div>
             </div>
@@ -100,6 +124,8 @@
             para te ajudar.
           </h3>
           <form
+            id="individual"
+            class="selected"
             action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
             method="POST"
           >
@@ -148,20 +174,22 @@
               size="20"
               type="text"
             /><br />
+            <label for="email">Email</label>
+            <br />
+            <input
+              required
+              id="email"
+              maxlength="80"
+              name="email"
+              size="20"
+              type="text"
+            /><br />
 
             <div class="input-container">
-              <div class="input-group">
-                <label for="email">Email</label>
-                <br />
-                <input
-                  required
-                  id="email"
-                  maxlength="80"
-                  name="email"
-                  size="20"
-                  type="text"
-                /><br />
-              </div>
+              <div class="input-group"></div>
+            </div>
+
+            <div class="input-container">
               <div class="input-group">
                 <label for="phone">Telefone</label>
                 <br />
@@ -172,19 +200,6 @@
                   name="phone"
                   size="20"
                   type="tel"
-                /><br />
-              </div>
-            </div>
-
-            <div class="input-container">
-              <div class="input-group">
-                <span>Número de Vidas:</span>
-                <br />
-                <input
-                  required
-                  id="00N5Y00000LJjJg"
-                  name="00N5Y00000LJjJg"
-                  type="number"
                 /><br />
               </div>
               <div class="input-group">
@@ -222,6 +237,275 @@
                   name="00N5Y00000LJwrZ"
                   type="text"
                   wrap="soft"
+                /><br />
+              </div>
+            </div>
+
+            <button type="submit" name="submit">Enviar</button>
+          </form>
+
+          <form
+            id="family"
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+            method="POST"
+          >
+            <input required type="hidden" name="oid" value="00D5Y000001N8rF" />
+            <input
+              id="00N5Y00000LJwn7"
+              name="00N5Y00000LJwn7"
+              type="hidden"
+              type="text"
+            />
+            <input
+              required
+              type="hidden"
+              name="retURL"
+              value="http://celebre-demo.netlify.app/obrigado"
+            />
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+            <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+            <!--  <input
+                required type="hidden" name="debug" value=1>                              -->
+            <!--  <input
+                required type="hidden" name="debugEmail"                                  -->
+            <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
+            <!--  ----------------------------------------------------------------------  -->
+
+            <label for="first_name">Nome do Familiar Responsável</label>
+            <br />
+            <input
+              required
+              id="first_name"
+              maxlength="40"
+              name="first_name"
+              size="20"
+              type="text"
+            /><br />
+
+            <label for="last_name">Sobrenome do Familiar Responsável</label>
+            <br />
+            <input
+              required
+              id="last_name"
+              maxlength="80"
+              name="last_name"
+              size="20"
+              type="text"
+            /><br />
+            <label for="email">Email</label>
+            <br />
+            <input
+              required
+              id="email"
+              maxlength="80"
+              name="email"
+              size="20"
+              type="text"
+            /><br />
+
+            <div class="input-container">
+              <div class="input-group"></div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-group">
+                <label for="phone">Telefone</label>
+                <br />
+                <input
+                  required
+                  id="phone"
+                  maxlength="40"
+                  name="phone"
+                  size="20"
+                  type="tel"
+                /><br />
+              </div>
+              <div class="input-group">
+                <span>Número de Vidas:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJjJg"
+                  name="00N5Y00000LJjJg"
+                  type="number"
+                /><br />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-group">
+                <span>Endereco:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJwnM"
+                  name="00N5Y00000LJwnM"
+                  type="text"
+                  wrap="soft"
+                /><br />
+              </div>
+
+              <div class="input-group">
+                <span>Complemento:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJwrZ"
+                  name="00N5Y00000LJwrZ"
+                  type="text"
+                  wrap="soft"
+                /><br />
+              </div>
+            </div>
+
+            <button type="submit" name="submit">Enviar</button>
+          </form>
+
+          <form
+            id="business"
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+            method="POST"
+          >
+            <input required type="hidden" name="oid" value="00D5Y000001N8rF" />
+            <input
+              id="00N5Y00000LJwn7"
+              name="00N5Y00000LJwn7"
+              type="hidden"
+              type="text"
+            />
+            <input
+              required
+              type="hidden"
+              name="retURL"
+              value="http://celebre-demo.netlify.app/obrigado"
+            />
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+            <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+            <!--  <input
+              required type="hidden" name="debug" value=1>                              -->
+            <!--  <input
+              required type="hidden" name="debugEmail"                                  -->
+            <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
+            <!--  ----------------------------------------------------------------------  -->
+
+            <div class="input-container">
+              <div class="input-group">
+                <label for="first_name">Nome do Colaborador Responsável</label>
+                <br />
+                <input
+                  required
+                  id="first_name"
+                  maxlength="40"
+                  name="first_name"
+                  size="20"
+                  type="text"
+                /><br />
+              </div>
+              <div class="input-group">
+                <label for="last_name"
+                  >Sobrenome do Colaborador Responsável</label
+                >
+                <br />
+                <input
+                  required
+                  id="last_name"
+                  maxlength="80"
+                  name="last_name"
+                  size="20"
+                  type="text"
+                /><br />
+              </div>
+            </div>
+
+            <label for="email">Email</label>
+            <br />
+            <input
+              required
+              id="email"
+              maxlength="80"
+              name="email"
+              size="20"
+              type="text"
+            /><br />
+            <div class="input-container">
+              <div class="input-group">
+                <span>Endereco:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJwnM"
+                  name="00N5Y00000LJwnM"
+                  type="text"
+                  wrap="soft"
+                /><br />
+              </div>
+
+              <div class="input-group">
+                <span>Complemento:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJwrZ"
+                  name="00N5Y00000LJwrZ"
+                  type="text"
+                  wrap="soft"
+                /><br />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-group"></div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-group">
+                <label for="title">Cargo</label
+                ><input
+                  id="title"
+                  maxlength="40"
+                  name="title"
+                  size="20"
+                  type="text"
+                /><br />
+              </div>
+
+              <div class="input-group">
+                <label for="company">Empresa</label
+                ><input
+                  id="company"
+                  maxlength="40"
+                  name="company"
+                  size="20"
+                  type="text"
+                /><br />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-group">
+                <label for="phone">Telefone</label>
+                <br />
+                <input
+                  required
+                  id="phone"
+                  maxlength="40"
+                  name="phone"
+                  size="20"
+                  type="tel"
+                /><br />
+              </div>
+              <div class="input-group">
+                <span>Número de Vidas:</span>
+                <br />
+                <input
+                  required
+                  id="00N5Y00000LJjJg"
+                  name="00N5Y00000LJjJg"
+                  type="number"
                 /><br />
               </div>
             </div>
