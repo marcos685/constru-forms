@@ -1,4 +1,5 @@
 body {
+  color: white !important;
   background: var(--primary);
 }
 
@@ -173,4 +174,22 @@ main {
 
 h2 {
   text-align: center;
+}
+
+.formContent.embeddedServiceSidebarForm {
+  font-family: var(--mont) !important;
+}
+.sidebarHeader h2 {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.label.bBody {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.helpButtonEnabled.uiButton span {
+  font-family: var(--mont) !important;
+  color: #fff !important;
 }
