@@ -105,6 +105,12 @@
           >
             <input required type="hidden" name="oid" value="00D5Y000001N8rF" />
             <input
+              id="00N5Y00000LJwn7"
+              name="00N5Y00000LJwn7"
+              type="hidden"
+              type="text"
+            />
+            <input
               required
               type="hidden"
               name="retURL"
@@ -143,18 +149,19 @@
               type="text"
             /><br />
 
-            <label for="email">Email</label>
-            <br />
-            <input
-              required
-              id="email"
-              maxlength="80"
-              name="email"
-              size="20"
-              type="text"
-            /><br />
-
             <div class="input-container">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <br />
+                <input
+                  required
+                  id="email"
+                  maxlength="80"
+                  name="email"
+                  size="20"
+                  type="text"
+                /><br />
+              </div>
               <div class="input-group">
                 <label for="phone">Telefone</label>
                 <br />
@@ -167,16 +174,29 @@
                   type="tel"
                 /><br />
               </div>
+            </div>
+
+            <div class="input-container">
               <div class="input-group">
-                <span class="dateInput dateOnlyInput">Data de Nascimento:</span>
+                <span>Número de Vidas:</span>
                 <br />
                 <input
                   required
-                  id="00N5Y00000LJwn7"
-                  name="00N5Y00000LJwn7"
-                  size="12"
-                  type="date"
+                  id="00N5Y00000LJjJg"
+                  name="00N5Y00000LJjJg"
+                  type="number"
                 /><br />
+              </div>
+              <div class="input-group">
+                <span>Data de Nascimento:</span>
+                <br />
+                <span class="dateInput dateOnlyInput"
+                  ><input
+                    id="birthDate"
+                    size="12"
+                    type="date"
+                    onchange="onInputChange(event);" /></span
+                ><br />
               </div>
             </div>
 
@@ -212,4 +232,5 @@
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
