@@ -1,16 +1,16 @@
 @keyframes circleBehavior {
   0% {
     transform: scale(1);
-    background: #fdcc00;
+    background: var(--secundary);
   }
 
   90% {
     transform: scale(0.7);
-    background: #fdcc00;
+    background: var(--secundary);
   }
   100% {
     transform: scale(3);
-    background: #fdcc00;
+    background: var(--secundary);
   }
   /* 
   30% {
@@ -103,7 +103,7 @@ section {
   width: 185px;
   height: 185px;
   border-radius: 50%;
-  background: #fdcc00;
+  background: var(--secundary);
   animation: circleBehavior 1.5s linear alternate forwards;
 }
 #airplane {
