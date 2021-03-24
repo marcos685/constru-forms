@@ -12,7 +12,8 @@
   --gray-4: #454545;
   --gray-5: #313131;
 
-  --primary: #853e68;
+  --primary: #032a5b;
+  --secundary: #ef7f00;
   --img-background: url(../img/background.png);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);

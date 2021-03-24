@@ -1,0 +1,183 @@
+@keyframes circleBehavior {
+  0% {
+    transform: scale(1);
+    background: #fdcc00;
+  }
+
+  90% {
+    transform: scale(0.7);
+    background: #fdcc00;
+  }
+  100% {
+    transform: scale(3);
+    background: #fdcc00;
+  }
+  /* 
+  30% {
+    transform: scale(3);
+    background-image: url(https://uploaddeimagens.com.br/images/003/129/210/original/clouds.png?1615576950);
+    background-size: 400px 200px;
+    background-position: bottom left;
+  }
+
+  100% {
+    transform: scale(3);
+    background-image: url(https://uploaddeimagens.com.br/images/003/129/210/original/clouds.png?1615576950);
+    background-size: 400px 200px;
+    background-position: top right;
+  } */
+}
+
+@keyframes cloudsBehavior {
+  0% {
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-580px, 100px);
+  }
+}
+
+@keyframes airplane {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-200px, 60px);
+  }
+
+  100% {
+    transform: translate(250px, -140px);
+  }
+}
+
+@keyframes success {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes failed {
+}
+
+header,
+main,
+section {
+  width: 100%;
+  max-width: 124em;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+.container-animation-style {
+  display: flex;
+  flex-direction: column;
+  background: #fbf6fe;
+  overflow: hidden;
+}
+.footer {
+  flex: 1;
+  background: #fff;
+}
+.animation-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.circle-animation {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  background: #fdcc00;
+  animation: circleBehavior 1.5s linear alternate forwards;
+}
+#airplane {
+  z-index: 6;
+  position: absolute;
+  width: 80px !important;
+  animation: airplane 6s cubic-bezier(0.55, -0.27, 0.55, 1.44) alternate
+    forwards;
+}
+#clouds {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #e3f0ff;
+  opacity: 0;
+  animation: cloudsBehavior 4.5s ease-in 1.5s alternate forwards;
+}
+
+.success {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #a6f2a9;
+  opacity: 0;
+  animation: success 2s ease-in 5s alternate forwards;
+}
+
+.success-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#success {
+  font-size: 2rem;
+}
+
+.failed {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #e96f6f;
+  opacity: 0;
+  animation: success 2s ease-in 5s alternate forwards;
+}
+
+.failed-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#failed {
+  font-size: 2rem;
+}
+
+/* baixo esquerda
+  transform: translate(-200px, 60px);
+
+*/
