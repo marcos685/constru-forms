@@ -38,6 +38,24 @@ body {
   margin-bottom: 12px;
   padding: 6px;
 }
+.form-container textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  height: 70px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+.form-container select {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
 
 .header {
   flex: 0.5;

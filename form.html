@@ -1,0 +1,71 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
+<!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
+<!--  de caracteres de sua página HTML.                                       -->
+<!--  ----------------------------------------------------------------------  -->
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form
+  action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+  method="POST"
+>
+  <input type="hidden" name="orgid" value="00D5Y000001N8rF" />
+  <input
+    type="hidden"
+    name="retURL"
+    value="https://obramax-demo.netlify.app/thank-you.html"
+  />
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+  <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail"                                  -->
+  <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
+  <!--  ----------------------------------------------------------------------  -->
+
+  <label for="name">Nome do contato</label
+  ><input id="name" maxlength="80" name="name" size="20" type="text" /><br />
+
+  <label for="email">Email</label
+  ><input id="email" maxlength="80" name="email" size="20" type="text" /><br />
+
+  <label for="phone">Telefone</label
+  ><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br />
+
+  <label for="subject">Assunto</label
+  ><input
+    id="subject"
+    maxlength="80"
+    name="subject"
+    size="20"
+    type="text"
+  /><br />
+
+  <label for="description">Descrição</label
+  ><textarea name="description"></textarea><br />
+
+  Número do Pedido:<input
+    id="00N5Y00000LM7S9"
+    name="00N5Y00000LM7S9"
+    size="20"
+    type="text"
+  /><br />
+
+  Loja:<select id="00N5Y00000LM7Wq" name="00N5Y00000LM7Wq" title="Loja">
+    <option value="">-- Nenhum --</option>
+    <option value="Loja Mooca">Loja Mooca</option>
+    <option value="Loja Praia Grande">Loja Praia Grande</option>
+    <option value="Site da Obramax">Site da Obramax</option>
+    <option value="Televendas">Televendas</option></select
+  ><br />
+
+  <input type="hidden" id="external" name="external" value="1" /><br />
+
+  <input type="submit" name="submit" />
+</form>
