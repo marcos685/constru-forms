@@ -14,7 +14,7 @@
 
   --primary: #032a5b;
   --secundary: #ef7f00;
-  --img-background: url(../img/background.png);
+  --img-background: url(../img/background.jpg);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
@@ -296,7 +296,7 @@ h5,
 p,
 span {
   font-weight: normal;
-  color: var(--foreground) !important;
+  color: #4d5f68 !important;
 }
 h1,
 h2,
