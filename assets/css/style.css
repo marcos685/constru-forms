@@ -17,14 +17,14 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background: rgba(1%, 16%, 36%, 0.8);
+  background: rgba(100%, 100%, 100%, 0.85);
   border-radius: 20px;
   overflow: hidden;
 }
 
 .form-container label,
 .form-container span {
-  color: #5f5f6e !important;
+  color: #4d5f68 !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
@@ -95,14 +95,14 @@ form.selected {
 .form-container h3 {
   font-size: 14px;
   font-weight: 700;
-  color: var(--primary) !important;
+  color: #00859a !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: var(--secundary);
+  background: #00859a;
   padding: 10px 36px;
   border-radius: 5px;
   text-align: center;
@@ -146,7 +146,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #fff;
+  background: #00859a;
   margin: 0 auto 20px;
   border-radius: 12px;
 }
@@ -154,7 +154,6 @@ aside {
 .option.selected h3 {
   font-size: 14px;
   font-weight: 700;
-  color: var(--secundary) !important;
   margin: 0;
 }
 
@@ -162,7 +161,6 @@ aside {
   min-width: 20px;
   min-height: 20px;
   border-radius: 50%;
-  background: var(--secundary);
   margin-right: 12px;
 }
 

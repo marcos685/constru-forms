@@ -26,7 +26,7 @@
     <div class="form-container">
       <aside>
         <div class="header">
-<!--           <img src="./assets/img/logo.png" alt="" srcset="" /> -->
+        <img src="./assets/img/logo.png" alt="" srcset="" />
         </div>
 
         <div class="main">
@@ -34,10 +34,10 @@
             <div id="individual-plan" class="option selected" onclick="setView('individual','individual-plan')">
               <div class="circle"></div>
               <div class="content">
-                <h3>Atraso na Entrega</h3>
+                <h3>Entre em contato</h3>
               </div>
             </div>
-            <div id="family-plan" class="option" onclick="setView('family','family-plan')">
+            <!-- <div id="family-plan" class="option" onclick="setView('family','family-plan')">
               <div class="circle"></div>
               <div class="content">
                 <h3>Problema com meu Pagamento</h3>
@@ -48,14 +48,14 @@
               <div class="content">
                 <h3>Problema com pedido retirado em Loja</h3>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- SVG -->
       </aside>
       <main>
         <h3>
-          Precisa daquele atendimento diferenciado que só a Trimix pode te
+          Precisa daquele atendimento diferenciado que só o Shopping Plaza Macaé pode te
           oferecer? Preencha o nosso formulário e um de nossos colaboradores
           irá entrar em contato para te ajudar.
         </h3>
@@ -63,58 +63,30 @@
           action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
           <input type=hidden name="orgid" value="00D5Y000001N8rF">
-          <input type=hidden name="retURL" value="https://trimix-demo.netlify.app/thank-you.html">
-
+          <input type=hidden name="retURL" value="http://">
+          
           <!--  ----------------------------------------------------------------------  -->
           <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
           <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-          <!--  <input
-                required type="hidden" name="debug" value=1>                              -->
-          <!--  <input
-                required type="hidden" name="debugEmail"                                  -->
+          <!--  <input type="hidden" name="debug" value=1>                              -->
+          <!--  <input type="hidden" name="debugEmail"                                  -->
           <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
           <!--  ----------------------------------------------------------------------  -->
-
+          
+          <label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
           <div class="input-container">
             <div class="input-group">
-              <label for="name">Nome</label>
-              <br />
-              <input id="name" maxlength="80" name="name" size="20" type="text" /><br />
-            </div>
-
-            <div class="input-group"> <label for="email">Email</label>
-              <br />
-              <input required id="email" maxlength="80" name="email" size="20" type="text" /><br />
-</div>
-          </div>
-
-
-
-          ><input id="subject" maxlength="80" name="subject" size="20" type="hidden" value="Atraso na Entrega" /><br />
-          <label for="subject">Número do Pedido:</label>
-          <input id="00N5Y00000LM7S9" name="00N5Y00000LM7S9" size="20" type="text" /><br>
-
-
-          <input type="hidden" id="external" name="external" value="1" /><br>
-          <div class="input-container">
-            <div class="input-group">
-              <label for="phone">Telefone/WhatsApp</label>
-              <br />
-              <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br />
+              <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
             </div>
             <div class="input-group">
-              <span>Loja:</span>
-              <br />
-              <select id="00N5Y00000LM7Wq" name="00N5Y00000LM7Wq" title="Loja">
-                <option value="">-- Nenhum --</option>
-                <option value="Loja Mooca">Loja Mooca</option>
-                <option value="Loja Praia Grande">Loja Praia Grande</option>
-                <option value="Site da Obramax">Site da Obramax</option>
-                <option value="Televendas">Televendas</option>
-              </select><br></span><br />
+              <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
             </div>
           </div>
-          <label for="description">Observações</label><textarea name="description"></textarea><br>
+          <label for="subject">Assunto</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+          
+          <label for="description">Descrição</label><textarea name="description"></textarea><br>
+          
+          <input type="hidden"  id="external" name="external" value="1" /><br>
 
 
           <button type="submit" name="submit">Enviar</button>
