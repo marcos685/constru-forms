@@ -95,14 +95,13 @@ form.selected {
 .form-container h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #000 !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
-  color: #000;
-  background: #fba212;
+  color: #fff;
+  background: var(--secundary);
   padding: 10px 36px;
   border-radius: 5px;
   text-align: center;
@@ -136,7 +135,8 @@ aside {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  color: #000 !important;
+  /* color: #000 !important; */
+  color: #fff !important;
 }
 
 .option.selected {
@@ -145,7 +145,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #fba212;
+  background: var(--secundary);
   margin: 0 auto 20px;
   border-radius: 12px;
 }

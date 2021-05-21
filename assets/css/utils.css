@@ -13,8 +13,8 @@
   --gray-5: #313131;
 
   --primary: #032a5b;
-  --secundary: #ef7f00;
-  --img-background: url(../img/background.jpg);
+  --secundary: #D4454B;
+  --img-background: url(../img/background.jpeg);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
@@ -296,7 +296,7 @@ h5,
 p,
 span {
   font-weight: normal;
-  color: #303030 !important;
+  color: #303030;
 }
 h1,
 h2,
@@ -325,7 +325,6 @@ h3,
   font-style: normal;
   font-size: 2.25em;
   line-height: 27px;
-  color: var(--foreground);
 }
 h4,
 .h4 {

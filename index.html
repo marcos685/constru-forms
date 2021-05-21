@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <!--  ----------------------------------------------------------------------  -->
+<!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
 <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
 <!--  de caracteres de sua página HTML.                                       -->
@@ -21,45 +21,11 @@
   <!--  ----------------------------------------------------------------------  -->
   <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
   <!--  ----------------------------------------------------------------------  -->
-  
-
-  
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-  <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-  <!--  <input type="hidden" name="debug" value=1>                              -->
-  <!--  <input type="hidden" name="debugEmail"                                  -->
-  <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
-  <!--  ----------------------------------------------------------------------  -->
-<!--   
-  <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-  
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-  
-  <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-  
-  <label for="description">Descrição</label><textarea name="description"></textarea><br>
-  
-  <input type="submit" name="submit">
-  
-  </form> -->
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
-  <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
-  <!--  de caracteres de sua página HTML.                                       -->
-  <!--  ----------------------------------------------------------------------  -->
-
-  <!-- <meta http-equiv="Content-type" content="text/html; charset=UTF-8" /> -->
-
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
-  <!--  ----------------------------------------------------------------------  -->
-
   <div class="container">
     <div class="form-container">
       <aside>
         <div class="header">
-        <img src="./assets/img/logo.png" alt="" srcset="" />
+        <img src="./assets/img/logo.jpeg" alt="" srcset="" />
         </div>
 
         <div class="main">
@@ -88,53 +54,41 @@
       </aside>
       <main>
         <h3>
-          Precisa daquele atendimento diferenciado que só a Alfa Instrumentos pode te
+          Precisa daquele atendimento diferenciado que só a Compre & Alugue Agora pode te
           oferecer? Preencha o nosso formulário e um de nossos colaboradores
           irá entrar em contato para te ajudar.
         </h3>
-        <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-        
-          <input type=hidden name="oid" value="00D5Y000001N8rF">
+        <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+          <input type=hidden name="orgid" value="00D5Y000001N8rF">
           <input type=hidden name="retURL" value="https://trimix-demo.netlify.app/thank-you.html">
         
-          <!--  ----------------------------------------------------------------------  -->
-          <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-          <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-          <!--  <input type="hidden" name="debug" value=1>                              -->
-          <!--  <input type="hidden" name="debugEmail"                                  -->
-          <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
-          <!--  ----------------------------------------------------------------------  -->
+         
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+<!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="deodato.cunha@c3csoftware.com.br">                               -->
+<!--  ----------------------------------------------------------------------  -->
         
+<label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
           <div class="input-container">
             <div class="input-group">
-              <label for="first_name">Primeiro Nome</label><input id="first_name" maxlength="40" name="first_name" size="20"
-                type="text" /><br>
+              <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
             </div>
             <div class="input-group">
-              <label for="last_name">Sobrenome</label><input id="last_name" maxlength="80" name="last_name" size="20"
-                type="text" /><br>
+              <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
             </div>
           </div>
-          <label for="company">Empresa</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
+         
+          <label for="subject">Assunto</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
         
-          <div class="input-container">
-            <div class="input-group">     
-              <label>CNPJ</label><input id="00N5Y00000Q2hCe" maxlength="18" name="00N5Y00000Q2hCe" size="20" type="text" /><br>
-            </div>
-            <div class="input-group">
-              <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
-            </div>
-          </div>
-          <label>Endereço</label><textarea id="00N5Y00000LJwnM" name="00N5Y00000LJwnM" type="text" wrap="soft"></textarea><br>
           
-          <div class="input-container">
-            <div class="input-group">
-              <label for="city">Cidade</label><input id="city" maxlength="40" name="city" size="20" type="text" /><br>
-            </div>
-            <div class="input-group">
-              <label for="state">Estado</label><input id="state" maxlength="20" name="state" size="20" type="text" /><br>
-            </div>
-          </div>
+          <label for="description">Descrição</label><textarea name="description"></textarea><br>
+          
+          <input type="hidden"  id="external" name="external" value="1" /><br>
 
           <button type="submit" name="submit">Enviar</button>
         </form>
