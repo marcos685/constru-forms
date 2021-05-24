@@ -14,7 +14,7 @@
 
   --primary: #032a5b;
   --secundary: #d4454b;
-  --img-background: url(../img/background.jpeg);
+  --img-background: url(../img/background.jpg);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
