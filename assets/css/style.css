@@ -17,20 +17,26 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background: rgba(100%, 100%, 100%, 1);
+  background-color: rgba(153, 66, 218, 0.8);
   border-radius: 20px;
   overflow: hidden;
 }
 
 .form-container label,
 .form-container span {
-  color: #303030 !important;
+  color: #0c0c0c !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 
+#empresa {
+  font-size: 14px !important;
+  color: #9e6dde !important;
+}
+
 .form-container input {
-  border: 1px solid #c4c4c4;
+  border: none;
+  background: #f4f4f4;
   border-radius: 5px;
   height: 35px;
   width: 100%;
@@ -39,7 +45,8 @@ body {
   padding: 6px;
 }
 .form-container textarea {
-  border: 1px solid #c4c4c4;
+  border: none;
+  background: #f4f4f4;
   border-radius: 5px;
   height: 70px;
   width: 100%;
@@ -48,7 +55,8 @@ body {
   padding: 6px;
 }
 .form-container select {
-  border: 1px solid #c4c4c4;
+  border: none;
+  background: #f4f4f4;
   border-radius: 5px;
   height: 35px;
   width: 100%;
@@ -95,16 +103,16 @@ form.selected {
 .form-container h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #000 !important;
+  color: #0c0c0c !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
-  color: #000;
-  background: #fba212;
+  color: #fff;
+  background: #b54bf1;
   padding: 10px 36px;
-  border-radius: 5px;
+  border-radius: 30px;
   text-align: center;
   font-size: 16px;
   font-weight: 300 !important;
@@ -137,7 +145,7 @@ aside {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .option.selected {
@@ -146,7 +154,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #fba212;
+  background: #b54bf1;
   margin: 0 auto 20px;
   border-radius: 12px;
 }
@@ -174,7 +182,7 @@ aside {
 
 main {
   flex: 1;
-  background: #f7f7f7;
+  background: #fff;
 }
 
 .result {
