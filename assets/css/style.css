@@ -17,27 +17,27 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: rgba(153, 66, 218, 0.8);
-  border-radius: 20px;
+  background-color: rgba(94, 66, 92, 0.8);
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
 .form-container label,
 .form-container span {
-  color: #0c0c0c !important;
+  color: #232323 !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 
 #empresa {
   font-size: 14px !important;
-  color: #9e6dde !important;
+  color: #232323 !important;
 }
 
 .form-container input {
   border: none;
   background: #f4f4f4;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 35px;
   width: 100%;
   margin-top: 4px;
@@ -47,7 +47,7 @@ body {
 .form-container textarea {
   border: none;
   background: #f4f4f4;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 70px;
   width: 100%;
   margin-top: 4px;
@@ -57,7 +57,7 @@ body {
 .form-container select {
   border: none;
   background: #f4f4f4;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 35px;
   width: 100%;
   margin-top: 4px;
@@ -70,6 +70,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header img {
+  max-width: 250px;
 }
 
 .footer {
@@ -103,16 +107,16 @@ form.selected {
 .form-container h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #0c0c0c !important;
+  color: #232323 !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #b54bf1;
+  background: #462644;
   padding: 10px 36px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   text-align: center;
   font-size: 16px;
   font-weight: 300 !important;
@@ -153,9 +157,10 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #b54bf1;
+  background: #462644;
   margin: 0 auto 20px;
-  border-radius: 12px;
+  border: 1px solid #fff;
+  /* border-radius: 12px; */
 }
 
 .option.selected h3 {
