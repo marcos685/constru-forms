@@ -17,26 +17,21 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: rgba(139, 44, 107, 0.8);
+  background-color: rgba(248, 245, 240, 0.8);
   border-radius: 20px;
   overflow: hidden;
 }
 
-.form-container label,
-.form-container span {
-  color: #606060 !important;
+.form-container label {
+  color: rgb(66, 66, 66) !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 
-#empresa {
-  font-size: 14px !important;
-}
-
 .form-container input {
-  border: none;
-  background: #f5f5f6;
-  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 4px;
   height: 35px;
   width: 100%;
   margin-top: 4px;
@@ -44,9 +39,9 @@ body {
   padding: 6px;
 }
 .form-container textarea {
-  border: none;
-  background: #f5f5f6;
-  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 4px;
   height: 70px;
   width: 100%;
   margin-top: 4px;
@@ -54,9 +49,9 @@ body {
   padding: 6px;
 }
 .form-container select {
-  border: none;
-  background: #f5f5f6;
-  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 4px;
   height: 35px;
   width: 100%;
   margin-top: 4px;
@@ -71,7 +66,8 @@ body {
   justify-content: center;
 }
 
-.header img {
+.header img,
+.header svg {
   max-width: 250px;
 }
 
@@ -103,17 +99,18 @@ form.selected {
   display: block;
 }
 
-.form-container h3 {
+.form-container h3,
+#empresa {
   font-size: 14px;
   font-weight: 700;
-  color: #606060 !important;
+  color: rgb(22, 58, 99) !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #f9b342;
+  background: #0b8384;
   padding: 10px 36px;
   border-radius: 30px;
   text-align: center;
@@ -156,7 +153,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #f9b342;
+  background: #0b8384;
   margin: 0 auto 20px;
   border-radius: 12px;
 }
