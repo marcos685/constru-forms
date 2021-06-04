@@ -23,7 +23,7 @@ body {
 }
 
 .form-container label {
-  color: rgb(66, 66, 66) !important;
+  color: var(--secundary) !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
@@ -99,18 +99,23 @@ form.selected {
   display: block;
 }
 
-.form-container h3,
+.form-container h3{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary) !important;
+  margin: 0;
+}
 #empresa {
   font-size: 14px;
   font-weight: 700;
-  color: rgb(22, 58, 99) !important;
+  color: var(--secundary) !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #0b8384;
+  background: var(--primary);
   padding: 10px 36px;
   border-radius: 30px;
   text-align: center;
@@ -153,7 +158,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #0b8384;
+  background: var(--primary);
   margin: 0 auto 20px;
   border-radius: 12px;
 }
