@@ -17,20 +17,20 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: rgba(248, 245, 240, 0.8);
+  background-color: rgba(233, 244, 243, 0.8);
   border-radius: 20px;
   overflow: hidden;
 }
 
 .form-container label {
-  color: rgb(66, 66, 66) !important;
+  color: #616263 !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 
 .form-container input {
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(115, 115, 115);
+  border: 1px solid rgba(61, 62, 63, 0.24);
   border-radius: 4px;
   height: 35px;
   width: 100%;
@@ -40,7 +40,7 @@ body {
 }
 .form-container textarea {
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(115, 115, 115);
+  border: 1px solid rgba(61, 62, 63, 0.24);
   border-radius: 4px;
   height: 70px;
   width: 100%;
@@ -50,7 +50,7 @@ body {
 }
 .form-container select {
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(115, 115, 115);
+  border: 1px solid rgba(61, 62, 63, 0.24);
   border-radius: 4px;
   height: 35px;
   width: 100%;
@@ -103,19 +103,19 @@ form.selected {
 #empresa {
   font-size: 14px;
   font-weight: 700;
-  color: rgb(22, 58, 99) !important;
+  color: #47304d !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #0b8384;
+  background: #10a9a0;
   padding: 10px 36px;
   border-radius: 30px;
   text-align: center;
-  font-size: 16px;
-  font-weight: 300 !important;
+  font-size: 15px;
+  font-weight: 500 !important;
   float: right;
   cursor: pointer;
 }
@@ -153,7 +153,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #0b8384;
+  background: #10a9a0;
   margin: 0 auto 20px;
   border-radius: 12px;
 }
