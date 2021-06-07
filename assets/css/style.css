@@ -103,7 +103,7 @@ form.selected {
 #empresa {
   font-size: 14px;
   font-weight: 700;
-  color: #47304d !important;
+  color: var(--primary) !important;
   margin: 0;
 }
 
