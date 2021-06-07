@@ -99,7 +99,12 @@ form.selected {
   display: block;
 }
 
-.form-container h3,
+.form-container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary) !important;
+  margin: 0;
+}
 #empresa {
   font-size: 14px;
   font-weight: 700;
