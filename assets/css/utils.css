@@ -12,9 +12,9 @@
   --gray-4: #454545;
   --gray-5: #313131;
 
-  --primary: #b55364;
-  --secundary: #d4454b;
-  --img-background: url(../img/background.jpg);
+  --primary: #506B7D;
+  --secundary: #506B7D;
+  --img-background: url(../img/background-the-men.png);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);

@@ -17,7 +17,7 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: rgba(228, 201, 191, 0.85);
+  background-color: #caddebc0;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -68,7 +68,7 @@ body {
 
 .header img,
 .header svg {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .footer {
