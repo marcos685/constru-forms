@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/c3c-style.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/utils.css" />
+    <title>Solicitação de Contato</title>
+  </head>
+  <body>
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
+    <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
+    <!--  de caracteres de sua página HTML.                                       -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <div class="container">
+      <div class="form-container">
+        <aside>
+          <div class="header">
+            <img src="./assets/img/c3c-logo.png" />
+          </div>
+
+          <div class="main">
+            <div class="options">
+              <div class="option selected">
+                <div class="circle"></div>
+                <div class="content">
+                  <h3>Informações Enviadas</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="thank-you">
+            <div class="container-animation-style">
+              <div class="animation-container">
+                <div class="circle-animation"></div>
+
+                <svg
+                  id="airplane"
+                  width="95"
+                  height="84"
+                  viewBox="0 0 95 84"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.222 71.858L61.3968 43.9276L93.5717 15.9972L65.295 32.7989L37.0184 49.6005L33.1202 60.7293L29.222 71.858Z"
+                    fill="#1DA1F2"
+                  />
+                  <path
+                    opacity="0.54"
+                    d="M29.222 71.858L61.3968 43.9276L93.5717 15.9972L65.295 32.7989L37.0184 49.6005L33.1202 60.7293L29.222 71.858Z"
+                    fill="#032A5B"
+                  />
+                  <path
+                    d="M29.0318 72.8884C28.9616 72.8753 28.8922 72.8556 28.8247 72.829C28.7572 72.8024 28.6916 72.7691 28.6289 72.729C28.4208 72.5953 28.2718 72.403 28.1944 72.1877C28.1171 71.9724 28.1115 71.7341 28.1906 71.5083L32.0887 60.3795L35.9868 49.2508C36.0267 49.1371 36.0864 49.032 36.1627 48.9396C36.2389 48.8471 36.3316 48.7675 36.4374 48.7047L64.7139 31.9031L92.9904 15.1015C93.2287 14.9597 93.5047 14.9185 93.7639 14.9673C94.0231 15.016 94.2655 15.1548 94.4365 15.3729C94.6076 15.5914 94.6791 15.8535 94.6558 16.1062C94.6326 16.3588 94.5146 16.6018 94.3067 16.7822L62.132 44.7125L29.9574 72.6428C29.8295 72.7538 29.6796 72.8303 29.521 72.8715C29.3622 72.9128 29.1947 72.9187 29.0318 72.8884ZM37.9271 50.3019L34.7622 59.3376L31.5972 68.3734L57.7208 45.6961L83.8443 23.0187L60.8858 36.6603L37.9271 50.3019Z"
+                    fill="#032A5B"
+                  />
+                  <path
+                    d="M62.3322 78.7411L77.9524 47.3743L93.5725 16.0076L51.213 22.8034L8.85351 29.5992L18.7746 38.4691L28.6957 47.339L61.1341 31.6733L93.5725 16.0076L66.3645 35.0932L39.1565 54.1789L50.7443 66.46L62.3322 78.7411Z"
+                    fill="#1DA1F2"
+                  />
+                  <path
+                    d="M62.1418 79.7717C62.0263 79.7502 61.9148 79.7109 61.8117 79.6552C61.7086 79.5995 61.6139 79.5277 61.532 79.441L49.944 67.1598L38.3562 54.8785C38.2515 54.7674 38.1735 54.638 38.1251 54.4993C38.0767 54.3607 38.0581 54.2128 38.0725 54.0648C38.0868 53.9169 38.1336 53.776 38.2076 53.6502C38.2817 53.5244 38.3831 53.4138 38.5071 53.3267L60.347 38.0068L82.1869 22.6869L55.6907 35.4829L29.1944 48.2788C28.9922 48.3767 28.7682 48.408 28.5527 48.3773C28.3371 48.3465 28.1301 48.2537 27.9619 48.1034L18.0409 39.2335L8.11985 30.3636C7.967 30.2269 7.86027 30.0549 7.80601 29.8694C7.75174 29.6838 7.75003 29.4847 7.80719 29.2938C7.86428 29.103 7.97529 28.9368 8.12292 28.8102C8.27055 28.6835 8.45485 28.5965 8.65837 28.5637L51.0074 21.7696L93.3564 14.9755C93.4253 14.9633 93.4921 14.9577 93.5599 14.9583C93.6278 14.959 93.6968 14.9658 93.7703 14.9787C93.7707 14.9788 93.7712 14.9789 93.7712 14.9789C93.772 14.979 93.7724 14.9791 93.7724 14.9791C93.7732 14.9792 93.7739 14.9794 93.7745 14.9795C93.7751 14.9796 93.7755 14.9797 93.7755 14.9797C93.7943 14.9834 93.8131 14.9876 93.8317 14.9923C93.8503 14.997 93.8687 15.0022 93.8869 15.0079C93.8874 15.008 93.888 15.0081 93.8886 15.0083C93.8892 15.0085 93.8897 15.0086 93.8897 15.0086C94.0083 15.0455 94.1209 15.1014 94.2218 15.1752C94.3227 15.2491 94.4119 15.3407 94.484 15.4486C94.4842 15.4488 94.4844 15.4491 94.4844 15.4491C94.4848 15.4496 94.485 15.4498 94.485 15.4498L94.4852 15.4503L94.4855 15.4506C94.4917 15.4598 94.4977 15.4691 94.5035 15.4786C94.5093 15.488 94.515 15.4974 94.5205 15.507C94.5206 15.5073 94.5208 15.5073 94.521 15.5075C94.521 15.5075 94.5214 15.508 94.5215 15.5089C94.5781 15.6069 94.617 15.7101 94.6389 15.815C94.6609 15.9199 94.6658 16.0265 94.6546 16.131C94.6513 16.1618 94.6466 16.1926 94.6405 16.2232C94.6343 16.2537 94.6267 16.284 94.6177 16.314L94.6177 16.3143L94.6176 16.3144C94.6175 16.3146 94.6174 16.3148 94.6174 16.3148C94.6173 16.3152 94.6172 16.3154 94.6172 16.3154C94.6083 16.3454 94.5978 16.3749 94.586 16.4039C94.5742 16.433 94.561 16.4616 94.5465 16.4898L78.9304 47.8487L63.3143 79.2076C63.2366 79.3636 63.121 79.4952 62.9802 79.5939C62.8394 79.6924 62.6734 79.7578 62.4948 79.7812C62.4355 79.7891 62.376 79.7921 62.317 79.7904C62.2579 79.7887 62.1993 79.7824 62.1418 79.7717ZM40.7767 54.349L51.4089 65.6176L62.0412 76.8862L76.3732 48.1061L90.7052 19.3261L65.741 36.8375L40.7767 54.349ZM11.2111 30.2873L20.04 38.1807L28.8688 46.0741L57.7362 32.1331L86.6035 18.1922L48.9073 24.2397L11.2111 30.2873Z"
+                    fill="#032A5B"
+                  />
+                  <g opacity="0.17">
+                    <path
+                      opacity="0.17"
+                      d="M68.7268 66.7229C67.4121 65.4055 66.0949 64.089 64.7759 62.7726C63.457 61.4562 62.1363 60.1398 60.8148 58.8226C58.886 56.9004 56.9244 54.9455 54.9563 52.978C52.9881 51.0105 51.0135 49.0306 49.0585 47.0583C48.8685 46.8667 48.6204 46.7566 48.3652 46.7329C48.1099 46.7092 47.8474 46.7717 47.6284 46.9253L43.0611 50.129L38.4938 53.3327C38.3698 53.4197 38.2684 53.5303 38.1943 53.6561C38.1202 53.7819 38.0735 53.9229 38.0591 54.0707C38.0448 54.2188 38.0634 54.3667 38.1118 54.5053C38.1601 54.644 38.2381 54.7734 38.3428 54.8845L49.931 67.1662L61.5192 79.4479C61.6011 79.5344 61.6957 79.6064 61.7989 79.6621C61.9021 79.7178 62.0136 79.7571 62.129 79.7786C62.1866 79.7893 62.2452 79.7956 62.3042 79.7973C62.3632 79.799 62.4227 79.7959 62.482 79.7881C62.6606 79.7646 62.8266 79.6992 62.9675 79.6007C63.1083 79.5022 63.2239 79.3704 63.3015 79.2144L66.1161 73.5626L68.9306 67.9107C69.0287 67.7135 69.0574 67.4965 69.0217 67.2887C68.986 67.081 68.8861 66.8826 68.7268 66.7229Z"
+                      fill="#5D5D5D"
+                    />
+                    <path
+                      opacity="0.17"
+                      d="M42.7755 41.2595C42.8038 41.0971 42.7916 40.9322 42.7427 40.7778C42.6938 40.6233 42.6083 40.4791 42.4901 40.3578C39.9322 37.731 37.5313 35.232 35.2554 32.8268C32.9794 30.4215 30.8284 28.1103 28.7703 25.8591C28.6441 25.7209 28.4859 25.6191 28.3126 25.5592C28.1393 25.4993 27.9507 25.4813 27.7642 25.511L18.2165 27.0427L8.6688 28.5743C8.4653 28.6071 8.28101 28.6941 8.13339 28.8207C7.98578 28.9474 7.87478 29.1135 7.81769 29.3043C7.76054 29.4952 7.76226 29.6942 7.81651 29.8798C7.87076 30.0653 7.97749 30.2373 8.13033 30.3739L18.0504 39.2425L27.9705 48.1111C28.0484 48.1807 28.1345 48.238 28.226 48.2824C28.3175 48.3268 28.4143 48.3584 28.5134 48.3768C28.6284 48.3982 28.7465 48.4019 28.8629 48.3871C28.9794 48.3723 29.0943 48.3389 29.2027 48.2865L35.702 45.1479L42.2013 42.0094C42.3537 41.9357 42.483 41.8295 42.5813 41.701C42.6796 41.5726 42.7469 41.4219 42.7755 41.2595Z"
+                      fill="#5D5D5D"
+                    />
+                  </g>
+                  <path
+                    d="M28.6869 47.3343L28.9556 59.5962L29.2243 71.8582L34.1867 63.0166L39.149 54.175L66.3602 35.0871L93.5715 15.9991L61.1292 31.6667L28.6869 47.3343Z"
+                    fill="#1DA1F2"
+                  />
+                  <path
+                    opacity="0.5"
+                    d="M28.6869 47.3343L28.9556 59.5962L29.2243 71.8582L34.1867 63.0166L39.149 54.175L66.3602 35.0871L93.5715 15.9991L61.1292 31.6667L28.6869 47.3343Z"
+                    fill="#032A5B"
+                  />
+                  <path
+                    d="M29.0351 72.8888C29.0243 72.8868 29.0136 72.8846 29.0028 72.8822C28.992 72.8798 28.9813 72.8773 28.9706 72.8747C28.7302 72.8155 28.5243 72.6821 28.3771 72.5038C28.2301 72.3256 28.1418 72.1026 28.1367 71.8641L27.8679 59.6021L27.5991 47.3401C27.5947 47.1399 27.6496 46.948 27.7517 46.7838C27.8539 46.6197 28.0033 46.4833 28.1879 46.3943L60.6301 30.7268L93.0723 15.0593C93.3241 14.9377 93.6048 14.9203 93.86 14.9918C94.1152 15.0633 94.345 15.2236 94.4951 15.4574C94.6451 15.6916 94.6902 15.9603 94.6409 16.2104C94.5916 16.4605 94.4481 16.6919 94.2205 16.8515L67.107 35.8709L39.9935 54.8903L35.0886 63.6295L30.1838 72.3687C30.0721 72.5678 29.9 72.7192 29.6983 72.8101C29.4966 72.9011 29.2653 72.9316 29.0351 72.8888ZM29.7896 47.983L30.0074 57.9197L30.2252 67.8564L34.2077 60.7605L38.1902 53.6645C38.228 53.597 38.2734 53.5341 38.3254 53.4769C38.3774 53.4197 38.4359 53.368 38.5002 53.3229L60.3427 38.0011L82.1851 22.6794L55.9873 35.3311L29.7896 47.983Z"
+                    fill="#032A5B"
+                  />
+                </svg>
+
+                <svg
+                  id="clouds"
+                  width="1389"
+                  height="875"
+                  viewBox="0 0 1389 875"
+                  fill="#E3F0FF"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect
+                    x="7"
+                    y="8"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern0)"
+                  />
+                  <rect
+                    x="122"
+                    y="81"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern1)"
+                  />
+                  <rect y="154" width="128" height="48" fill="url(#pattern2)" />
+                  <rect y="316" width="128" height="48" fill="url(#pattern3)" />
+                  <rect y="462" width="128" height="48" fill="url(#pattern4)" />
+                  <rect y="608" width="128" height="48" fill="url(#pattern5)" />
+                  <rect y="754" width="128" height="48" fill="url(#pattern6)" />
+                  <rect
+                    x="115"
+                    y="227"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern7)"
+                  />
+                  <rect
+                    x="115"
+                    y="389"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern8)"
+                  />
+                  <rect
+                    x="115"
+                    y="535"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern9)"
+                  />
+                  <rect
+                    x="115"
+                    y="681"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern10)"
+                  />
+                  <rect
+                    x="115"
+                    y="827"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern11)"
+                  />
+                  <rect
+                    x="270"
+                    y="4"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern12)"
+                  />
+                  <rect
+                    x="385"
+                    y="77"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern13)"
+                  />
+                  <rect
+                    x="263"
+                    y="150"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern14)"
+                  />
+                  <rect
+                    x="263"
+                    y="312"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern15)"
+                  />
+                  <rect
+                    x="263"
+                    y="458"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern16)"
+                  />
+                  <rect
+                    x="263"
+                    y="604"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern17)"
+                  />
+                  <rect
+                    x="263"
+                    y="750"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern18)"
+                  />
+                  <rect
+                    x="378"
+                    y="223"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern19)"
+                  />
+                  <rect
+                    x="378"
+                    y="385"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern20)"
+                  />
+                  <rect
+                    x="378"
+                    y="531"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern21)"
+                  />
+                  <rect
+                    x="378"
+                    y="677"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern22)"
+                  />
+                  <rect
+                    x="378"
+                    y="823"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern23)"
+                  />
+                  <rect
+                    x="502"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern24)"
+                  />
+                  <rect
+                    x="617"
+                    y="73"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern25)"
+                  />
+                  <rect
+                    x="495"
+                    y="146"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern26)"
+                  />
+                  <rect
+                    x="495"
+                    y="308"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern27)"
+                  />
+                  <rect
+                    x="495"
+                    y="454"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern28)"
+                  />
+                  <rect
+                    x="495"
+                    y="600"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern29)"
+                  />
+                  <rect
+                    x="495"
+                    y="746"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern30)"
+                  />
+                  <rect
+                    x="610"
+                    y="219"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern31)"
+                  />
+                  <rect
+                    x="610"
+                    y="381"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern32)"
+                  />
+                  <rect
+                    x="610"
+                    y="527"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern33)"
+                  />
+                  <rect
+                    x="610"
+                    y="673"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern34)"
+                  />
+                  <rect
+                    x="610"
+                    y="819"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern35)"
+                  />
+                  <rect
+                    x="734"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern36)"
+                  />
+                  <rect
+                    x="849"
+                    y="73"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern37)"
+                  />
+                  <rect
+                    x="727"
+                    y="146"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern38)"
+                  />
+                  <rect
+                    x="727"
+                    y="308"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern39)"
+                  />
+                  <rect
+                    x="727"
+                    y="454"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern40)"
+                  />
+                  <rect
+                    x="727"
+                    y="600"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern41)"
+                  />
+                  <rect
+                    x="727"
+                    y="746"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern42)"
+                  />
+                  <rect
+                    x="842"
+                    y="219"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern43)"
+                  />
+                  <rect
+                    x="842"
+                    y="381"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern44)"
+                  />
+                  <rect
+                    x="842"
+                    y="527"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern45)"
+                  />
+                  <rect
+                    x="842"
+                    y="673"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern46)"
+                  />
+                  <rect
+                    x="842"
+                    y="819"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern47)"
+                  />
+                  <rect
+                    x="984"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern48)"
+                  />
+                  <rect
+                    x="1099"
+                    y="73"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern49)"
+                  />
+                  <rect
+                    x="977"
+                    y="146"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern50)"
+                  />
+                  <rect
+                    x="977"
+                    y="308"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern51)"
+                  />
+                  <rect
+                    x="977"
+                    y="454"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern52)"
+                  />
+                  <rect
+                    x="977"
+                    y="600"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern53)"
+                  />
+                  <rect
+                    x="977"
+                    y="746"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern54)"
+                  />
+                  <rect
+                    x="1092"
+                    y="219"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern55)"
+                  />
+                  <rect
+                    x="1092"
+                    y="381"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern56)"
+                  />
+                  <rect
+                    x="1092"
+                    y="527"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern57)"
+                  />
+                  <rect
+                    x="1092"
+                    y="673"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern58)"
+                  />
+                  <rect
+                    x="1092"
+                    y="819"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern59)"
+                  />
+                  <rect
+                    x="1261"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern60)"
+                  />
+                  <rect
+                    x="1254"
+                    y="146"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern61)"
+                  />
+                  <rect
+                    x="1254"
+                    y="308"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern62)"
+                  />
+                  <rect
+                    x="1254"
+                    y="454"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern63)"
+                  />
+                  <rect
+                    x="1254"
+                    y="600"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern64)"
+                  />
+                  <rect
+                    x="1254"
+                    y="746"
+                    width="128"
+                    height="48"
+                    fill="url(#pattern65)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern1"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern2"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern3"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern4"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern5"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern6"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern7"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern8"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern9"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern10"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern11"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern12"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern13"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern14"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern15"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern16"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern17"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern18"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern19"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern20"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern21"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern22"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern23"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern24"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern25"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern26"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern27"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern28"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern29"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern30"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern31"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern32"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern33"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern34"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern35"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern36"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern37"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern38"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern39"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern40"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern41"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern42"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern43"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern44"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern45"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern46"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern47"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern48"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern49"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern50"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern51"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern52"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern53"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern54"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern55"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern56"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern57"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern58"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern59"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern60"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern61"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern62"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern63"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern64"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <pattern
+                      id="pattern65"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0"
+                        transform="scale(0.0078125 0.0208333)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0"
+                      width="128"
+                      height="48"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+
+                <div class="success">
+                  <div class="success-circle">
+                    <svg
+                      id="success"
+                      width="59"
+                      height="44"
+                      viewBox="0 0 59 44"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0808 41.785L1.48178 26.6114C0.893562 24.8733 2.48665 23.1313 4.3027 23.6212L4.34321 23.6321L18.1892 38.0232L18.9098 38.7722L19.6305 38.0232L54.5907 1.68675C56.4151 0.955103 58.2639 2.8311 57.4306 4.67274L57.4173 4.70225L21.7389 41.785C20.9509 42.6041 19.9304 43 18.9098 43C17.8893 43 16.8688 42.6041 16.0808 41.785Z"
+                        fill="#177310"
+                        stroke="#177310"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <!-- <div class="failed">
+                      <div class="failed-circle">
+                          <svg id="failed" width="71" height="69" viewBox="0 0 71 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M61 12.928V12.928C62.9203 10.4454 59.9129 7.17378 57.2778 8.8788L57.0905 9L34.5 31.5905L11.9095 9V9C9.34021 7.27411 6.27595 10.3574 8 12.928V12.928L30.5905 35.5184L8 58.1089V58.1089C6.35804 60.6636 9.35163 63.6554 11.9095 62.0184V62.0184L34.5 39.428L57.0905 62.0184L57.3944 62.1785C59.985 63.5427 62.6663 60.5163 61 58.1089V58.1089L38.4095 35.5184L61 12.928Z" fill="#E24444"/>
+                          </svg>
+                      </div>
+                  </div> -->
+              </div>
+              <div class="footer"></div>
+            </div>
+            <h2>
+              Formulário enviado com sucesso. Agora é só aguardar o nosso
+              contato!
+            </h2>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

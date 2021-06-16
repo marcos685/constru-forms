@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/c3c-style.css" />
+  <link rel="stylesheet" href="./assets/css/utils.css" />
+  <title>Solicitação de Contato</title>
+</head>
+
+<body>
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
+  <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
+  <!--  de caracteres de sua página HTML.                                       -->
+  <!--  ----------------------------------------------------------------------  -->
+
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+  <!--  ----------------------------------------------------------------------  -->
+  <div class="container">
+    <div class="form-container">
+      <aside>
+        <div class="header">
+            <img src="./assets/img/c3c-logo.png" />
+        </div>
+
+        <div class="main">
+          <div class="options">
+            <div id="individual-plan" class="option selected" onclick="setView('individual','individual-plan')">
+              <div class="circle"></div>
+              <div class="content">
+                <h3>Entre em contato</h3>
+              </div>
+            </div>
+            <!-- <div id="family-plan" class="option" onclick="setView('family','family-plan')">
+              <div class="circle"></div>
+              <div class="content">
+                <h3>Problema com meu Pagamento</h3>
+              </div>
+            </div>
+            <div id="business-plan" class="option" onclick="setView('business','business-plan')">
+              <div class="circle"></div>
+              <div class="content">
+                <h3>Problema com pedido retirado em Loja</h3>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <!-- SVG -->
+      </aside>
+      <main>
+        <h3>
+          Precisa daquele atendimento diferenciado que só a <span id="empresa">Pipo Saúde</span> pode te
+          oferecer? Preencha o nosso formulário e um de nossos colaboradores
+          irá entrar em contato para te ajudar.
+        </h3>
+
+        <!-- ----------------FORM PARA WEB-TO-CASE--------------- --> 
+        <!-- <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+          <input type=hidden name="orgid" value="00D5Y000001N8rF">
+          <input type=hidden name="retURL" value="https://trimix-demo.netlify.app/thank-you.html"> -->
+
+        
+         
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+<!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="deodato.cunha@c3csoftware.com.br">                               -->
+<!--  ----------------------------------------------------------------------  --
+        
+<label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+          <div class="input-container">
+            <div class="input-group">
+
+              <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            </div>
+            <div class="input-group">
+
+              <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20"
+                type="text" /><br>
+            </div>
+          </div>
+
+          <label for="title">Assunto</label><input id="title" maxlength="40" name="title" size="20" type="text" /><br>
+
+
+
+          <label for="description">Descrição</label><textarea name="description"></textarea><br>
+          
+          <input type="hidden"  id="external" name="external" value="1" /><br> -->
+
+          <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="oid" value="00D5Y000001N8rF">
+            <input type=hidden name="retURL" value="https://trimix-demo.netlify.app/thank-you.html">
+            
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+            <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="deodato.cunha@c3csoftware.com.br">                               -->
+            <!--  ----------------------------------------------------------------------  -->
+            <div class="input-container">
+              <div class="input-group">
+                <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+              </div>
+              <div class="input-group"> 
+                <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+              </div>
+            </div>
+            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            
+            <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+            
+            <div class="input-container">
+              <div class="input-group">
+                <label for="city">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+              </div>
+              <div class="input-group">
+                <label for="state">Estado</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+              </div>
+            </div>
+          <button type="submit" name="submit">Enviar</button>
+        </form>
+
+
+
+        <!-- <form id="family" 
+          action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+          <input type=hidden name="orgid" value="00D5Y000001N8rF">
+          <input type=hidden name="retURL" value="https://obramax-demo.netlify.app/thank-you.html">
+
+----------------------------------------------------------------------  -->
+        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+        <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+        <!--  <input
+                required type="hidden" name="debug" value=1>                              -->
+        <!--  <input
+                required type="hidden" name="debugEmail"                                  -->
+        <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
+        <!--  ----------------------------------------------------------------------  -->
+
+        <!-- <div class="input-container">
+            <div class="input-group">
+              <label for="name">Nome</label>
+              <br />
+              <input id="name" maxlength="80" name="name" size="20" type="text" /><br />
+            </div>
+
+            <div class="input-group"> <label for="email">Email</label>
+              <br />
+              <input required id="email" maxlength="80" name="email" size="20" type="text" /><br />
+</div> -->
+        <!-- </div> -->
+
+
+
+        <!-- ><input id="subject" maxlength="80" name="subject" size="20" type="hidden"
+            value="Problema com meu pagamento" /><br />
+          <label for="subject">Número do Pedido:</label>
+          <input id="00N5Y00000LM7S9" name="00N5Y00000LM7S9" size="20" type="text" /><br>
+
+
+          <input type="hidden" id="external" name="external" value="1" /><br>
+          <div class="input-container">
+            <div class="input-group">
+              <label for="phone">Telefone/WhatsApp</label>
+              <br />
+              <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br />
+            </div>
+            <div class="input-group">
+              <span>Loja:</span>
+              <br />
+              <select id="00N5Y00000LM7Wq" name="00N5Y00000LM7Wq" title="Loja">
+                <option value="">-- Nenhum --</option>
+                <option value="Loja Mooca">Loja Mooca</option>
+                <option value="Loja Praia Grande">Loja Praia Grande</option>
+                <option value="Site da Obramax">Site da Obramax</option>
+                <option value="Televendas">Televendas</option>
+              </select><br></span><br />
+            </div>
+          </div>
+          <label for="description">Observações</label><textarea name="description"></textarea><br>
+
+
+          <button type="submit" name="submit">Enviar</button>
+        </form> 
+
+        <form id="business" 
+          action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+          <input type=hidden name="orgid" value="00D5Y000001N8rF">
+          <input type=hidden name="retURL" value="https://obramax-demo.netlify.app/thank-you.html"> -->
+
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+        <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+        <!--  <input
+              required type="hidden" name="debug" value=1>                              -->
+        <!--  <input
+              required type="hidden" name="debugEmail"                                  -->
+        <!--  value="thiago.takahashi@c3csoftware.com.br">                            -->
+        <!--  ----------------------------------------------------------------------  -->
+
+        <!-- <div class="input-container">
+            <div class="input-group">
+              <label for="name">Nome</label>
+              <br />
+              <input id="name" maxlength="80" name="name" size="20" type="text" /><br />
+            </div>
+
+            <div class="input-group"> <label for="email">Email</label>
+              <br />
+              <input required id="email" maxlength="80" name="email" size="20" type="text" /><br />
+</div>
+          </div>
+
+
+
+          ><input id="subject" maxlength="80" name="subject" size="20" type="hidden"
+            value="Problema com pedido retirado na Loja" /><br />
+          <label for="subject">Número do Pedido:</label>
+          <input id="00N5Y00000LM7S9" name="00N5Y00000LM7S9" size="20" type="text" /><br>
+
+
+          <input type="hidden" id="external" name="external" value="1" /><br>
+          <div class="input-container">
+            <div class="input-group">
+              <label for="phone">Telefone/WhatsApp</label>
+              <br />
+              <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br />
+            </div>
+            <div class="input-group">
+              <span>Loja:</span>
+              <br />
+              <select id="00N5Y00000LM7Wq" name="00N5Y00000LM7Wq" title="Loja">
+                <option value="">-- Nenhum --</option>
+                <option value="Loja Mooca">Loja Mooca</option>
+                <option value="Loja Praia Grande">Loja Praia Grande</option>
+                <option value="Site da Obramax">Site da Obramax</option>
+                <option value="Televendas">Televendas</option>
+              </select><br></span><br />
+            </div>
+          </div>
+          <label for="description">Observações</label><textarea name="description"></textarea><br>
+
+
+          <button type="submit" name="submit">Enviar</button>
+        </form> -->
+      </main>
+    </div>
+  </div>
+  <style type="text/css">
+    .embeddedServiceHelpButton .helpButton .uiButton {
+      background-color: var(--primary);
+      font-family: var(--mont);
+      color: #fff !important;
+    }
+
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+      outline: 1px solid var(--primary);
+    }
+  </style>
+
+  <script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
+  <script type="text/javascript">
+    var initESW = function (gslbBaseURL) {
+      embedded_svc.settings.displayHelpButton = true; //Ou falso
+      embedded_svc.settings.language = "pt-BR"; //Por exemplo, insira "pt" ou "pt-BR"
+
+      //embedded_svc.settings.defaultMinimizedText = '...'; //(Assume como padrão o Chat com um especialista)
+      //embedded_svc.settings.disabledMinimizedText = '...'; //(Assume como padrão Agente off-line)
+
+      //embedded_svc.settings.loadingText = ''; //(Assume como padrão Carregando)
+      //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Define o domínio de sua implantação para que seus visitantes possam navegar em subdomínios durante uma sessão de chat)
+
+      // Configurações para Chat
+      //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+      // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+      // Returns a valid button ID.
+      //};
+      //embedded_svc.settings.prepopulatedPrechatFields = {}; //Define o preenchimento automático de campos de formulário de pré-chat
+      //embedded_svc.settings.fallbackRouting = []; //Uma matriz de IDs de botão, IDs de usuário ou userId_buttonId
+      //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Padronizado para Entre em contato conosco)
+
+      embedded_svc.settings.enabledFeatures = ["LiveAgent"];
+      embedded_svc.settings.entryFeature = "LiveAgent";
+
+      embedded_svc.init(
+        "https://atar-c3c-demo.my.salesforce.com",
+        "https://sdodemo-main-166ce2cf6b6-172-177bb533812.force.com/consumer",
+        gslbBaseURL,
+        "00D5Y000001N8rF",
+        "celebre_chat",
+        {
+          baseLiveAgentContentURL:
+            "https://c.la3-c2-ia4.salesforceliveagent.com/content",
+          deploymentId: "5725Y000000Hlhr",
+          buttonId: "5735Y0000009NhV",
+          baseLiveAgentURL:
+            "https://d.la3-c2-ia4.salesforceliveagent.com/chat",
+          eswLiveAgentDevName: "celebre_chat",
+          isOfflineSupportEnabled: true,
+        }
+      );
+    };
+
+    if (!window.embedded_svc) {
+      var s = document.createElement("script");
+      s.setAttribute(
+        "src",
+        "https://atar-c3c-demo.my.salesforce.com/embeddedservice/5.0/esw.min.js"
+      );
+      s.onload = function () {
+        initESW(null);
+      };
+      document.body.appendChild(s);
+    } else {
+      initESW("https://service.force.com");
+    }
+  </script>
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,251 @@
+body {
+  color: white !important;
+  background: var(--primary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/c3c-background.png);
+}
+
+.form-container {
+  width: 80%;
+  height: 80%;
+  min-height: 550px;
+  display: flex;
+  background-color: #ffffffc0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 50%);
+}
+
+.form-container label {
+  color: #54595f !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+}
+
+.form-container input {
+  background-color: rgba(110, 193, 228, 0.15);
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+.form-container textarea {
+  background-color: rgba(110, 193, 228, 0.15);
+  border: none;
+  border-radius: 4px;
+  height: 70px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+.form-container select {
+  background-color: rgba(110, 193, 228, 0.15);
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+
+.header {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img,
+.header svg {
+  max-width: 250px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+.input-container {
+  display: flex;
+}
+
+.input-group {
+  flex: 1;
+}
+.input-group:first-child {
+  margin-right: 8px;
+}
+form,
+h3 {
+  margin: 20px;
+}
+
+form {
+  display: none;
+}
+
+form.selected {
+  display: block;
+}
+
+.form-container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #54595f !important;
+  margin: 0;
+}
+.form-container h2 {
+  color: #54595f !important;
+}
+#empresa {
+  font-size: 14px;
+  font-weight: 700;
+  color: #54595f !important;
+  margin: 0;
+}
+
+.form-container button {
+  font-family: var(--mont);
+  color: #fff;
+  background: #2978ff;
+  padding: 10px 36px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600 !important;
+  float: right;
+  cursor: pointer;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.main {
+  flex: 1;
+}
+
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 60px;
+  cursor: pointer;
+  margin: 0 auto 20px 75px;
+}
+
+.option h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff !important;
+}
+
+.option.selected {
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  width: 90%;
+  height: 60px;
+  background: #2978ff;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+}
+
+.option.selected h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.option.selected .circle {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.option .circle {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 12px;
+}
+
+main {
+  flex: 1;
+  background: #fff;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  background: #a6f2a9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.formContent.embeddedServiceSidebarForm {
+  font-family: var(--mont) !important;
+}
+
+.formContent.embeddedServiceSidebarForm * {
+  font-family: var(--mont) !important;
+}
+.sidebarHeader h2 {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.label.bBody {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.helpButtonEnabled.uiButton span {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.messageArea.smoothScroll {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton {
+  padding: 0 10px !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+  background: var(--primary) !important;
+  font-family: var(--mont) !important;
+  padding: 0 10px !important;
+  color: #fff !important;
+}
+
+.chasitorInputWrapper.dynamicResizeTextOneRow.text.embeddedServiceLiveAgentStateChatInputFooter,
+.rich-menu-item.embeddedServiceLiveAgentStateChatRichItem,
+.chasitorText.textarea.uiInput.uiInputTextArea.uiInput--default.uiInput--textarea {
+  font-family: var(--mont) !important;
+}
