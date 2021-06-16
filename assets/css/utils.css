@@ -12,9 +12,9 @@
   --gray-4: #454545;
   --gray-5: #313131;
 
-  --primary: #506B7D;
-  --secundary: #506B7D;
-  --img-background: url(../img/background-the-men.png);
+  --primary: #506b7d;
+  --secundary: #506b7d;
+  --img-background: url(../img/background.jpg);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
@@ -296,7 +296,7 @@ h5,
 p,
 span {
   font-weight: normal;
-  color: #7a7a7a !important;
+  color: #333 !important;
 }
 h1,
 h2,
