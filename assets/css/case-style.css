@@ -1,0 +1,247 @@
+body {
+  color: white !important;
+  background: var(--primary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/case-background.jpg");
+}
+
+.form-container {
+  width: 80%;
+  height: 80%;
+  min-height: 550px;
+  display: flex;
+  background-color: #00000080;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.form-container label {
+  color: #5e5e5e !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+}
+
+.form-container input {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #9e9e9e !important;
+  border-radius: 4px;
+  height: 35px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+.form-container textarea {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 70px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+.form-container select {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 35px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+
+.header {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img,
+.header svg {
+  max-width: 150px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+.input-container {
+  display: flex;
+}
+
+.input-group {
+  flex: 1;
+}
+.input-group:first-child {
+  margin-right: 8px;
+}
+form,
+h3 {
+  margin: 20px;
+}
+
+form {
+  display: none;
+}
+
+form.selected {
+  display: block;
+}
+
+.form-container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1b253a !important;
+  margin: 0;
+}
+#empresa {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2980b9 !important;
+  margin: 0;
+}
+
+.form-container button {
+  font-family: var(--mont);
+  color: #fff;
+  background: #1ed760;
+  padding: 10px 36px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600 !important;
+  float: right;
+  cursor: pointer;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.main {
+  flex: 1;
+}
+
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 60px;
+  cursor: pointer;
+  margin: 0 auto 20px 75px;
+}
+
+.option h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff !important;
+}
+
+.option.selected {
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  width: 90%;
+  height: 60px;
+  background: #1ed760;
+  margin: 0 auto 20px;
+  border-radius: 4px;
+}
+
+.option.selected h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.option.selected .circle {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.option .circle {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 12px;
+}
+
+main {
+  flex: 1;
+  background: #fff;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  background: #a6f2a9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.formContent.embeddedServiceSidebarForm {
+  font-family: var(--mont) !important;
+}
+
+.formContent.embeddedServiceSidebarForm * {
+  font-family: var(--mont) !important;
+}
+.sidebarHeader h2 {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.label.bBody {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.helpButtonEnabled.uiButton span {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.messageArea.smoothScroll {
+  font-family: var(--mont) !important;
+  color: #fff !important;
+}
+
+.dialogButton.dialog-button-0.uiButton.embeddedServiceSidebarButton {
+  padding: 0 10px !important;
+}
+
+.waitingCancelChat.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+  background: var(--primary) !important;
+  font-family: var(--mont) !important;
+  padding: 0 10px !important;
+  color: #fff !important;
+}
+
+.chasitorInputWrapper.dynamicResizeTextOneRow.text.embeddedServiceLiveAgentStateChatInputFooter,
+.rich-menu-item.embeddedServiceLiveAgentStateChatRichItem,
+.chasitorText.textarea.uiInput.uiInputTextArea.uiInput--default.uiInput--textarea {
+  font-family: var(--mont) !important;
+}
