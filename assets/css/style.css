@@ -17,13 +17,16 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: #1b253ac0;
+  background-color: rgb(87, 87, 87, .5);
   border-radius: 4px;
   overflow: hidden;
 }
+h2.thank-you {
+  color: #fff!important;
+}
 
 .form-container label {
-  color: #5e5e5e !important;
+  color: #fff !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
@@ -102,20 +105,21 @@ form.selected {
 .form-container h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #1b253a !important;
+  color: #fff !important;
   margin: 0;
 }
 #empresa {
   font-size: 14px;
   font-weight: 700;
-  color: #2980b9 !important;
+  color: var(--primary) !important;
   margin: 0;
 }
 
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #2980b9;
+  background: var(--primary);
+  margin-top: 30px;
   padding: 10px 36px;
   border-radius: 4px;
   text-align: center;
@@ -158,7 +162,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #2980b9;
+  background: var(--primary);
   margin: 0 auto 20px;
   border-radius: 4px;
 }
@@ -186,7 +190,7 @@ aside {
 
 main {
   flex: 1;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.596);
 }
 
 .result {
