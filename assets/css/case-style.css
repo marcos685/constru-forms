@@ -9,7 +9,9 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("../img/case-background.jpg");
+  background: var(--img-background);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
 }
 
 .form-container {
@@ -115,7 +117,7 @@ form.selected {
 .form-container button {
   font-family: var(--mont);
   color: #fff;
-  background: #1ed760;
+  background: var(--primary);
   padding: 10px 36px;
   border-radius: 4px;
   text-align: center;
@@ -158,7 +160,7 @@ aside {
   padding-left: 45px;
   width: 90%;
   height: 60px;
-  background: #1ed760;
+  background: var(--primary);
   margin: 0 auto 20px;
   border-radius: 4px;
 }
