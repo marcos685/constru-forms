@@ -17,24 +17,24 @@ body {
   height: 80%;
   min-height: 550px;
   display: flex;
-  background-color: #080f2790;
-  border-radius: 16px;
+  background-color: #191919;
+  border-radius: 12px;
   overflow: hidden;
 }
 h2.thank-you {
-  color: #1a1d39!important;
+  color: #191919!important;
 }
 
 .form-container label {
-  color: #1a1d39 !important;
+  color: #191919 !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 
 .form-container input {
-  background-color: #ececec;
-  border: none;
-  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 12px;
   height: 35px;
   width: 100%;
   margin-top: 4px;
@@ -121,7 +121,7 @@ form.selected {
   background: var(--primary);
   margin-top: 30px;
   padding: 8px 36px;
-  border-radius: 50px;
+  border-radius: 8px;
   text-align: center;
   font-size: 15px;
   font-weight: 600 !important;
@@ -164,7 +164,7 @@ aside {
   height: 60px;
   background: var(--primary);
   margin: 0 auto 20px;
-  border-radius: 50px;
+  border-radius: 12px;
 }
 
 .option.selected h3 {

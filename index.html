@@ -25,7 +25,7 @@
     <div class="form-container">
       <aside>
         <div class="header">
-          <img src="https://www.credihome.com.br/assets/img/credihome-logo-max.png" />
+          <img src="https://totalpass.com/wp-content/themes/theme-for-wordpress/assets/img/logo.png" />
         </div>
 
         <div class="main">
@@ -46,39 +46,39 @@
         </h3>
 
       
-        <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-
-          <input type=hidden name="orgid" value="00D5Y000001N8rF">
+        <form class="selected" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type=hidden name="oid" value="00D5Y000001N8rF">
           <input type=hidden name="retURL" value="https://trimix-demo.netlify.app/thank-you.html">
           
           <!--  ----------------------------------------------------------------------  -->
           <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
           <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-            <!-- <input type="hidden" name="debug" value=1>                               -->
-           <!-- <input type="hidden" name="debugEmail"                                   -->
-            <!-- value="marcos.gomes@c3csoftware.com.br">                               -->
+          <!--  <input type="hidden" name="debug" value=1>                              -->
+          <!--  <input type="hidden" name="debugEmail"                                  -->
+          <!--  value="deodato.cunha@c3csoftware.com.br">                               -->
           <!--  ----------------------------------------------------------------------  -->
-          
-          <label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-          
-          <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-          
-          <label>Endereço do imóvel</label><input  id="00N5Y00000PdE3K" maxlength="255" name="00N5Y00000PdE3K" size="20" type="text" /><br>
-          
-          <label>Metragem</label><input  id="00N5Y00000PdE3P" name="00N5Y00000PdE3P" size="20" type="text" /><br>
           <div class="input-container">
             <div class="input-group">
-              <label>Valor do imóvel</label><input  id="00N5Y00000PdE3U" name="00N5Y00000PdE3U" size="20" type="text" /><br>
+              <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
             </div>
-            <div class="input-group">
-              <label>Valor financiado</label><input  id="00N5Y00000PdE3Z" name="00N5Y00000PdE3Z" size="20" type="text" /><br>
+            <div class="input-group"> 
+              <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
             </div>
           </div>
-          <input type="hidden"  id="external" name="external" value="1" /><br>
-            
+          <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+          
+          <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+          
+          <div class="input-container">
+            <div class="input-group">
+              <label for="city">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+            </div>
+            <div class="input-group">
+              <label for="state">Estado</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+            </div>
+          </div>
           <button type="submit" name="submit">Enviar</button>
         </form>
-
 
 
         <!-- <form id="family" 
