@@ -106,12 +106,12 @@
                         <!----------------------------------------------------------------------  -->
                         <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
                         <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-                        <!-- <input required type="hidden" name="debug" value="1" /> -->
-                        <!-- <input
+                        <!-- <input required type="hidden" name="debug" value="1" />
+                        <input
                             required
                             type="hidden"
                             name="debugEmail"
-                            value="thiago.takahashi@c3csoftware.com.br"
+                            value="marcos.gomes@c3csoftware.com.br"
                         /> -->
                         <!--  ----------------------------------------------------------------------  -->
 
@@ -141,23 +141,13 @@
                                     type="text"
                                 /><br />
                             </div>
-                        
 
-                        <input
-                            id="subject"
-                            maxlength="80"
-                            name="subject"
-                            size="20"
-                            type="hidden"
-                            value="Problema com meu pagamento"
-                        /><br />
-
-                        <input
-                            type="hidden"
-                            id="external"
-                            name="external"
-                            value="1"
-                        /><br />
+                            <input
+                                type="hidden"
+                                id="external"
+                                name="external"
+                                value="1"
+                            /><br />
                             <div class="input-group">
                                 <label for="phone">Telefone/WhatsApp</label>
                                 <br />
@@ -170,8 +160,13 @@
                                 /><br />
                             </div>
                         </div>
-                        <label for="description">Observações</label
-                        ><textarea name="description"></textarea><br />
+                        <label for="subject">Observações</label
+                        ><input
+                            id="subject"
+                            maxlength="80"
+                            name="subject"
+                            size="20"
+                        />
 
                         <button type="submit" name="submit">Enviar</button>
                     </form>
