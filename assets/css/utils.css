@@ -12,9 +12,9 @@
   --gray-4: #454545;
   --gray-5: #313131;
 
-  --primary: #0e395e;
-  --secundary: #fc714c;
-  --img-background: url(https://cdn.unasp.br/home/2022/01/21080916/slide_next-aprenda-com-os-melhores.jpg);
+  --primary: #ebebec;
+  --secundary: #0b3471;
+  --img-background: url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
