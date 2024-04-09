@@ -12,9 +12,9 @@
   --gray-4: #454545;
   --gray-5: #313131;
 
-  --primary: #ebebec;
-  --secundary: #0b3471;
-  --img-background: url(https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  --primary: #ffffff;
+  --secundary: #002a9a;
+  --img-background: url(https://armac.com.br/wordpress/wp-content/uploads/2022/07/202207_Home.jpg.webp);
   --foreground: var(--gray-4);
   --placeholder: var(--gray-2);
   --label: var(--gray-3);
